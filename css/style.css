@@ -1,4 +1,5 @@
-/***** BASE STYLES *****/
+/* ---------- Mobile Styles ---------- */
+/* ----- Base Styles ----- */
 body {
     background-color: #DAF7F6;
     color: #3B3B3B;
@@ -7,7 +8,7 @@ body {
     line-height: 16px;
 }
 
-/***** HEADER *****/
+/* ----- Header ----- */
 header {
     background-color: #FFFFFF;
     text-align: center;
@@ -16,7 +17,7 @@ h1 {
     color: #F16059;
     display: inline-block;
     font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 700;
     margin: 0;
     padding: 40px 0;
@@ -24,26 +25,27 @@ h1 {
 }
 header img {
     margin-right: 16px;
+    width: 35px;
 }
 
-/***** MAIN STRUCTURE & IMAGES *****/
+/* ----- Main Structure & Images ----- */
 main {
-    margin: 0 auto;
-    width: 1000px;
+    margin: 0;
 }
 .card {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     margin: 25px 0;
-    overflow: auto;
 }
 .image {
-    float: left;
     height: 550px;
     width: 500px;
 }
 .recipe {
     background-color: #FFFFFF;
     box-sizing: border-box;
-    float: left;
     height: 550px;
     padding: 20px;
     width: 500px;
@@ -61,7 +63,7 @@ main {
     background-size: cover;
 }
 
-/***** RECIPE STYLING *****/
+/* ----- Recipe Styling ----- */
 .recipe h2 {
     color: #F16059;
     font-family: 'Montserrat', sans-serif;
@@ -100,7 +102,7 @@ main {
     font-family: 'Montserrat', sans-serif;
 }
 
-/***** INGREDIENTS & DIRECTIONS *****/
+/* ----- Ingredients & Directions ----- */
 .columns {
     overflow: auto;
 }
@@ -132,3 +134,21 @@ main {
     line-height: 22px;
     padding-left: 15px;
 }
+
+/* ---------- Tablet Styles ---------- */
+@media only screen and (min-width: 768px) {
+    h1 {
+        font-size: 48px;
+    }
+    header img {
+        width: 45px;
+    }
+
+} /* end tablet styles */
+
+/* ---------- Desktop Styles ---------- */
+@media only screen and (min-width: 1200px) {
+    .card {
+        flex-direction: row;
+    }
+} /* end desktop styles */
